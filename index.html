@@ -20,15 +20,15 @@
     </nav>
 
     <header>
-      <button class="btn verde">Nuevo juego</button>
-      <button class="btn amarillo">Pedir carta</button>
-      <button class="btn rojo">Detener</button>
+      <button class="btn verde" id="btnNuevo">Nuevo juego</button>
+      <button class="btn amarillo" id="btnPedir">Pedir carta</button>
+      <button class="btn rojo" id="btnDetener">Detener</button>
     </header>
 
     <main class="container">
       <div class="jugador">
         <h1>Jugador 1 - <small>0</small></h1>
-        <div id="jugador-cartas">
+        <div id="jugador-cartas" class="divCartas">
           <!-- <img src="./cartas/10D.png" class="carta" /> -->
 
         </div>
@@ -36,14 +36,16 @@
 
       <div class="pc">
         <h1>NPC - <small>0</small></h1>
-        <div id="npc-cartas">
+        <div id="npc-cartas" class="divCartas">
           
         </div>
       </div>
     </main>
 
     <script src="./js/underscore.js"></script>
-    <script src="./js/app.js"></script>
-  
+    <script src="./js/app-min.js"></script>
+    <script>
+      miModulo.iniciarJuego()
+    </script>
   </body>
 </html>

@@ -18,11 +18,17 @@ body{
 .btn{
     text-align: center;
     border: none;
-    border-radius: 5px;
+    border-radius: 7px;
     padding: 15px;
     color: white;
     min-width: 93px;
-    border-bottom: 1px solid #333;
+    margin: 5px;
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+.btn:disabled,
+.btn[disabled]{
+    border: none;
 }
 
 .rojo{
